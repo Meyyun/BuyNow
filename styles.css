@@ -1,0 +1,692 @@
+html{
+    height: 100%;
+    width: 100%;
+    background-color:aliceblue;
+    margin:0;
+    padding:0;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: aliceblue;
+    font-size: 16px;
+    color: var(aliceblue);
+    font-family: Tahoma, sans-serif;
+    margin: 0;
+    margin-top: 10px;
+    padding: 0 30px;
+    padding-bottom: 80px; /* Add padding to prevent content from being hidden behind footer */
+    transition: background-color 0.3s ease;
+}
+
+
+/*** Text ***
+  
+  Purpose: 
+  - Add style rules for headings (h1-6),
+    paragraphs (p), links (a), and buttons
+
+  When To Modify:
+  - [X] Project 3 (REQUIRED FEATURE) 
+  - [ ] Any time after
+***/
+
+h1 {
+    background-color:aliceblue;
+    font-family: Tahoma, sans-serif;
+}
+
+h2 {
+    background-color:aliceblue;
+    font-family: Tahoma, sans-serif;
+}
+
+h3 {
+    background-color:aliceblue;
+    font-family: Tahoma, sans-serif;
+}
+
+h4 {
+    background-color:aliceblue;
+    font-family: Tahoma, sans-serif;
+}
+
+p {
+    background-color:aliceblue;
+    font-family: Tahoma, sans-serif;
+    list-style: circle;
+}
+.link_of_article a:link {
+    color:#a6a0cf;
+    border-bottom:2px solid transparent;
+    transition: all 0.3s ease;
+}
+.link_of_article a:visited{
+    color:#28eb76
+}
+.link_of_article a:hover{
+    color:#e63946
+}
+.link_of_article a:active{
+    color:#f8bbd0
+}
+
+button {
+    /* Example Style, replace with your own! */
+    background-color: rgb(165, 233, 255);    /* button color */
+    color: white;               /* text color */
+    border: none;               /* hides the default border */
+    padding: 5px 12px;          /* space between button's text and edge */
+    border-radius: 5px;         /* curved edges instead of square */
+    cursor: pointer;            /* makes the cursor change when over button */
+}
+
+button:hover {
+    /* Make the button look different when the user hovers over it */
+    color: lightgray;
+}
+/*** footer ***
+  
+  Purpose:
+  - Add style rules for your website's footer section
+
+  When To Modify:
+  - [ ] Project 3 (STRETCH FEATURE) 
+  - [ ] Any time after
+***/
+
+.footer { /* Example B: This styles elements with class="footer" */
+    position: fixed;
+    left: 0;
+    bottom:0;
+    width:100%;
+}
+
+.footer_class {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #684fb5;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+.footer_class a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+}
+
+.footer_class a:hover {
+    color: #d2cff5;
+    text-decoration: underline;
+}
+ 
+/*** RSVP [PLACEHOLDER] [ADDED IN UNIT 6] ***/
+/*** Animations [PLACEHOLDER] [ADDED IN UNIT 8] ***/
+/*** Success Modal [PLACEHOLDER] [ADDED IN UNIT 9] ***/
+/*** Dark Mode [PLACEHOLDER] [ADDED IN UNIT 5] ***/
+
+:root {
+    /* Light Mode */
+    --bg-color: #a6a0cf;
+    --text-color: #231942;
+
+    /* Dark Mode */
+    --bg-color-dark-mode: #3e3377;
+    --text-color-dark-mode: #fff;
+
+    /* Accent Colors */
+    --accent-color-light: #d2cff5;
+    --accent-color-medium: #684fb5;
+    --accent-color-dark: #482f95;
+    --accent-color-darkest: #231942;
+    --accent-color-green: #28eb76;
+
+    /* Error Colors */
+    --error-color: #f8bbd0;
+    --error-color-border: #e63946;
+}
+
+#searchpicbutton{
+    width: 18px;
+    height: 18px;
+    margin: 0;
+}
+.header-container{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: aliceblue;
+    margin: 0;
+    padding: 15px 30px;
+    text-align: center;
+    flex-direction: row;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    flex-wrap: nowrap;
+    width: 100%;
+    box-sizing: border-box;
+    min-width: 900px;
+}
+.header-item:nth-of-type(1){
+    flex: 0 0 auto;
+
+}
+.header-item:nth-of-type(2){
+    flex: 0 0 auto;
+    margin-left: auto;
+    margin-right: 15px;
+
+}
+.navigate {
+    display: flex;
+    align-items: center;
+}
+
+.navigate ul{
+    z-index: 1000;
+    list-style-type: none;
+    overflow: visible;
+    position: static;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.navigate ul li{
+    margin: 0;
+    display: block;
+}
+
+.navigate ul li a{
+    display: block;
+    text-decoration: none;
+    color: #684fb5;
+    text-align: center;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #684fb5;
+}
+
+.navigate ul li a:hover{
+    background-color: #684fb5;
+    color: white;
+    transform: translateY(-2px);
+    border: 1px solid #684fb5;
+}
+
+
+#profile{
+    color: #684fb5;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.header-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-item button {
+    background-color: #ffffff;
+    border: 1px solid #684fb5;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 16px;
+    color: #482f95;
+    font-weight: 500;
+    height: 37px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-item button:hover {
+    background-color: #684fb5;
+    color: white;
+    transform: translateY(-2px);
+}
+/* Dark mode styles */
+body.dark-mode,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4
+{
+    background-color: #2c2c2c;
+    color: white;
+}
+
+body.dark-mode .header-container {
+    background-color: #1a1a1a;
+    color: white;
+}
+body.dark-mode.navigate ul li a{
+    background-color: rgba(255,255,255,0.1);
+    color: white;
+    border: 1px solid #555;
+}
+body.dark-mode p {
+    background-color: #1a1a1a;
+    color: white;
+}
+
+
+body.reduce-motion-On *,
+body.reduce-motion-On *::before,
+body.reduce-motion-On *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    transform: none !important;
+}
+
+
+
+#searchbar {
+    width: 180px;
+    height: 37px;
+    padding: 8px 15px;
+    border: 1px solid #684fb5;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    background-color: white;
+    color: black;
+    margin: 0;
+    box-sizing: border-box;
+    line-height: normal;
+}
+
+#searchbar::placeholder {
+    color: #888;
+    opacity: 1;
+}
+
+#searchbar:focus {
+    border-color: #482f95;
+    box-shadow: 0 0 5px rgba(104, 79, 181, 0.3);
+    background-color: white;
+}
+
+.header-button{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-button button {
+    color: #482f95;
+    background-color: #ffffff;
+    border: 1px solid #684fb5;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    font-weight: 500;
+}
+#theme-button{
+    background-color: #6e6b6b;
+    color: white;
+    border: 1px solid #684fb5;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+.header-button button:hover {
+    background-color: #684fb5;
+    color: white;
+    transform: translateY(-2px);
+}
+
+
+.images{
+    height:200px;
+    width: 200px;
+}
+#souvenir{
+    height:300px;
+    width: 300px;
+}
+#image-mainpage{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+#image-mainpage > div {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: calc(25% - 15px);
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.mainImage{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    border: 1px solid #684fb5;
+}
+
+.mainImage:hover {
+    transform: scale(1.05);
+}
+
+#categories, #Discover, #about {
+    padding-top: 60px;
+    margin-top: 20px;
+}
+
+#categories h3, #rsvp h2, #about h2 ,#Discover h3,#About-Platform h3{
+    border-bottom: 2px solid #684fb5;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+.link_of_article{
+    background-color: white;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 15px;
+    border-left: 4px solid #684fb5;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.link_of_article p,.link_of_article h3{
+    background-color: white;
+}
+
+/* About Section Styling */
+#about {
+    background: linear-gradient(135deg, #f8f7ff 0%, #ebe1ff 100%);
+    padding: 60px 30px;
+    margin: 40px -30px;
+    border-radius: 0;
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    color: #684fb5;
+    text-align: center;
+    margin-bottom: 15px;
+    background: transparent;
+}
+
+#about > p {
+    font-size: 1.2rem;
+    color: #482f95;
+    text-align: center;
+    margin-bottom: 40px;
+    background: transparent;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.link_of_article {
+    background: white;
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 15px;
+    border-left: 5px solid #684fb5;
+    box-shadow: 0 4px 15px rgba(104, 79, 181, 0.1);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.link_of_article::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #684fb5, #a79acb);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.link_of_article:hover::before {
+    transform: scaleX(1);
+}
+
+.link_of_article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(104, 79, 181, 0.2);
+    border-left-color: #482f95;
+}
+
+.link_of_article h3 {
+    color: #684fb5;
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+    background: transparent;
+    font-weight: 600;
+}
+
+.link_of_article p {
+    color: #482f95;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    background: transparent;
+}
+
+.link_of_article a {
+    display: inline-block;
+    background: linear-gradient(135deg, #684fb5, #8a6cc7);
+    color: white !important;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: none;
+    box-shadow: 0 3px 10px rgba(104, 79, 181, 0.3);
+}
+
+.link_of_article a:hover {
+    background: linear-gradient(135deg, #482f95, #684fb5);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(104, 79, 181, 0.4);
+    color: white !important;
+}
+
+.link_of_article a:visited {
+    color: white !important;
+}
+
+.link_of_article a:active {
+    color: white !important;
+}
+
+#video-section {
+    text-align: center;
+    margin: 30px 0;
+    padding: 20px;
+}
+
+#video-section h3 {
+    margin-bottom: 20px;
+    color: #684fb5;
+}
+
+#video-section iframe {
+    max-width: 100%;
+    height: 300px;
+}
+#rsvp {
+    padding-top: 60px;
+    margin-top: 20px;
+}
+.rsvp-container{
+    display:flex;
+    flex-direction: row;
+    gap:20px;
+    width:100%;
+    padding-bottom:50px;
+}
+.rsvp-para h3{
+    display: flex;
+    text-align: center;
+    align-self: center;
+}
+.rsvp-para{
+    width:55%;
+    padding-right:10px;
+}
+.rsvp-participants{
+    width:45%;
+    padding-right:10px;
+}
+.form-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap:20px;
+    background-color: #ac93f9;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(104, 79, 181, 0.1);
+    width: 600px;
+    max-width: 90%;
+    margin: 0 auto;
+    height: auto;
+}
+.form-container button{
+    background-color: aliceblue;
+    color:black;
+}
+.form-container h3{
+    background-color: #ac93f9;
+}
+#rsvp-form{
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    gap:5px;
+    justify-content: center;
+    width: 500px;
+    max-width: 90%;
+}
+#rsvp-button{
+    display: flex;
+    width: 150px;
+    height: 30px;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+.error {
+  border: 2px solid #e63946;
+  background-color: #f8bbd0;
+  color: #231942;
+  /* Red border and light red background for error indication */
+}
+.modal {
+  display: none;   /* modal should be hidden by default*/
+  position: fixed; /* modal cannot move around the screen */
+  z-index: 2;      /* modal appears above other elements */ 
+  
+  /* TODO: Make the modal fill the entire screen */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+
+  /* Add a semi-transparent background to shadow non-modal elements*/
+  background-color: rgba(0,0,0,0.4); /* 40% opacity black */
+
+  /* Flexbox settings for modal */
+  /* These won't apply until we update "display:" from "hidden" to "flex" in our JS */
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-container {
+    /* Change modal size and spacing here */
+    padding: 30px;
+    width: 400px;
+    max-width: 90%;
+
+    /* Customize modal style here */
+    background-color: lightsteelblue;
+    color: black;
+    text-align: center;
+    font-size: 1rem;
+    font-family: monospace;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+
+    /* Optional: Use flexbox to customize .modal-item layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#modal-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+#modal-text {
+    flex: 1;
+    margin: 0;
+    font-size: 1rem;
+    color: #231942;
+    font-weight: bold;
+    background-color: transparent;
+    text-align: left;
+}
+
+#modal-image {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+#modal-close-button {
+    background-color: #684fb5;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    align-self: center;
+}
