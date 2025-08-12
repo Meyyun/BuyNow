@@ -17,6 +17,13 @@ const toggleDarkMode = () => {
    console.log("Clicked change color!");
    // Toggle the dark-mode class - this automatically switches between light/dark
    document.body.classList.toggle("dark-mode");
+   
+   // Update button text based on current mode
+   if (document.body.classList.contains("dark-mode")) {
+       DarkModeButton.textContent = "Dark Mode On";
+   } else {
+       DarkModeButton.textContent = "Dark Mode Off";
+   }
 }
 // Step 3: Register a 'click' event listener for the theme button,
 //             and tell it to use toggleDarkMode as its callback function
